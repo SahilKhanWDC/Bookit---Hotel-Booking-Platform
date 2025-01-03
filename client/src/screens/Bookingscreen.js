@@ -27,7 +27,7 @@ function Bookingscreen() {
         const myFunction = async () => {
             try {
                 setloading(true);
-                const data = (await axios.post("http://localhost:5000/api/rooms/getroombyid", { roomid })).data;
+                const data = (await axios.post("https://bookit-hotel-booking-platform.onrender.com/api/rooms/getroombyid", { roomid })).data;
                 setroom(data)
                 setTotalAmount(data.rentperday * totaldays)
                 setloading(false)

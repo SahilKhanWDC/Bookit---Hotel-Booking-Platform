@@ -17,7 +17,7 @@ function AdminUsers() {
         const getUsers = async () => {
             try {
                 setLoading(true)
-                const res = await axios.get("http://localhost:5000/api/users/")
+                const res = await axios.get("https://bookit-hotel-booking-platform.onrender.com/api/users/")
                 setUsers(res.data)
                 setLoading(false)
             } catch (error) {

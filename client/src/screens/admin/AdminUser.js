@@ -19,7 +19,7 @@ function AdminUser() {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = (await axios.get(`http://localhost:5000/api/users/${id}`)).data
+                const res = (await axios.get(`https://bookit-hotel-booking-platform.onrender.com/api/users/${id}`)).data
                 setUsername(res.name)
                 setEmail(res.email)
                 setIsAdmin(res.isAdmin)

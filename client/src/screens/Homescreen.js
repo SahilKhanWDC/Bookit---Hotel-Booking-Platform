@@ -44,7 +44,7 @@ function Homescreen() {
       try {
         setloading(true);
         const data = (
-          await axios.get("http://localhost:5000/api/rooms/getallrooms")
+          await axios.get("https://bookit-hotel-booking-platform.onrender.com/api/rooms/getallrooms")
         ).data;
         setrooms(data);
         setDuplicateRooms(data);

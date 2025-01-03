@@ -17,7 +17,7 @@ function AdminRooms() {
     const getRooms = async () => {
     try {
       setLoading(true)
-      const res = await axios.get("http://localhost:5000/api/rooms/getallrooms")
+      const res = await axios.get("https://bookit-hotel-booking-platform.onrender.com/api/rooms/getallrooms")
       setRooms(res.data)
       setLoading(false)
     } catch (error) {

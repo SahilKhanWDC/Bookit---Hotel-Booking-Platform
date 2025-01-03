@@ -19,7 +19,7 @@ function Profile({ parsedUser }) {
     }
     try {
       setLoading(true)
-      const res = await axios.put(`http://localhost:5000/api/users/${id}`, { name: username, email, password })
+      const res = await axios.put(`https://bookit-hotel-booking-platform.onrender.com/api/users/${id}`, { name: username, email, password })
       localStorage.setItem("currentUser", JSON.stringify(res.data))
       toast.success("Updated")
       setLoading(false)
