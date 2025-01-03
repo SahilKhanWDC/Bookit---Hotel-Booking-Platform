@@ -31,7 +31,7 @@ if(password===cpassword){
     // Sending Data to MongoDB
     try {
         setloading(true)
-        const result = await axios.post('http://localhost:5000/api/users/register',user).data
+        const result = await axios.post('https://bookit-hotel-booking-platform.onrender.com/api/users/register',user).data
         setloading(false)
         setsuccess(true)
         
